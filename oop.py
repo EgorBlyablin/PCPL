@@ -48,9 +48,9 @@ class SquareRoots:
 
         if d >= 0:  # если дискриминант неотрицателен - ищем корни
             # считаем подкоренное выражение, добавляя дискриминант
-            sub_sqrt_equation1 = (-b + math.sqrt(d)) / (2 * a)
+            sub_sqrt_equation1 = (-self.b + math.sqrt(d)) / (2 * self.a)
             # считаем подкоренное выражение, вычитая дискриминант
-            sub_sqrt_equation2 = (-b - math.sqrt(d)) / (2 * a)
+            sub_sqrt_equation2 = (-self.b - math.sqrt(d)) / (2 * self.a)
 
             for sub_sqrt_equation in (sub_sqrt_equation1, sub_sqrt_equation2):
                 if sub_sqrt_equation >= 0:
